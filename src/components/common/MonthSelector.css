@@ -1,0 +1,36 @@
+.month-selector {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.selector-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.selector-label {
+  font-weight: 500;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.selector-input {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .month-selector {
+    width: 100%;
+  }
+
+  .selector-group {
+    flex: 1;
+  }
+
+  .selector-input {
+    min-width: 100px;
+  }
+}

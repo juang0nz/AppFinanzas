@@ -1,0 +1,51 @@
+.frase-motivacional {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+}
+
+.frase-icono {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.frase-texto {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .frase-motivacional {
+    padding: 1rem;
+  }
+
+  .frase-icono {
+    font-size: 1.5rem;
+  }
+
+  .frase-texto {
+    font-size: 1rem;
+  }
+}

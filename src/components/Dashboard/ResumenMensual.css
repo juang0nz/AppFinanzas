@@ -1,0 +1,158 @@
+.resumen-mensual {
+  background-color: var(--color-card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+.resumen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.resumen-item {
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.resumen-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.resumen-ingresos {
+  background-color: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
+.resumen-gastos {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+}
+
+.resumen-positivo {
+  background-color: #f0fdf4;
+  border-color: #86efac;
+}
+
+.resumen-negativo {
+  background-color: #fff7ed;
+  border-color: #fed7aa;
+}
+
+.resumen-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.resumen-label {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.25rem;
+}
+
+.resumen-valor {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.resumen-detalle {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detalle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.detalle-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detalle-icono {
+  font-size: 1.25rem;
+}
+
+.detalle-item span:first-child {
+  color: var(--color-text-light);
+}
+
+.detalle-item span:last-child {
+  font-weight: 600;
+}
+
+.detalle-valor {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.detalle-secundario {
+  font-size: 0.8125rem;
+  padding-left: 1rem;
+  opacity: 0.9;
+}
+
+.detalle-icono-small {
+  font-size: 1rem;
+}
+
+.separador {
+  height: 1px;
+  background-color: var(--color-border);
+  margin: 0.5rem 0;
+}
+
+.explicacion {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #eff6ff;
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px;
+}
+
+.explicacion-texto {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #1e40af;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .resumen-mensual {
+    padding: 1rem;
+  }
+
+  .resumen-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resumen-item {
+    padding: 1rem;
+  }
+
+  .resumen-icon {
+    font-size: 1.5rem;
+  }
+
+  .resumen-valor {
+    font-size: 1.25rem;
+  }
+}

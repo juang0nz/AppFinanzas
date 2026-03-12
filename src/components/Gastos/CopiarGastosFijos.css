@@ -1,0 +1,151 @@
+.copiar-gastos-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1;
+}
+
+.banner-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.banner-text h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.banner-text p {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9375rem;
+  opacity: 0.95;
+  line-height: 1.5;
+}
+
+.banner-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.gasto-preview {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.banner-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.banner-actions .btn {
+  white-space: nowrap;
+  font-size: 0.9375rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.banner-actions .btn-primary {
+  background-color: white;
+  color: #667eea;
+  border: none;
+  font-weight: 600;
+}
+
+.banner-actions .btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.banner-actions .btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.banner-actions .btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+.banner-actions .btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+@media (max-width: 768px) {
+  .copiar-gastos-banner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.25rem;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .banner-icon {
+    font-size: 2rem;
+  }
+
+  .banner-text h3 {
+    font-size: 1rem;
+  }
+
+  .banner-text p {
+    font-size: 0.875rem;
+  }
+
+  .banner-lista {
+    flex-direction: column;
+  }
+
+  .gasto-preview {
+    white-space: normal;
+  }
+
+  .banner-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .banner-actions .btn {
+    width: 100%;
+  }
+}
